@@ -247,7 +247,13 @@ require_type_annotated_api_methods = True
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
+scheduler_events = {
+    "cron": {
+        "*/30 * * * *": [
+            "stooq_ins.api.sync_metal_prices"
+        ]
+    }
+}
 # Translation
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
