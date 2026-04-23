@@ -9,7 +9,8 @@
   "section_break_b6d9",
   "metal_name",
   "ticker_symbol",
-  "unit_of_measure"
+  "unit_of_measure",
+  "comodity"
  ],
  "fields": [
   {
@@ -35,12 +36,18 @@
    "fieldtype": "Link",
    "label": "unit_of_measure",
    "options": "UOM"
+  },
+  {
+   "fieldname": "comodity",
+   "fieldtype": "Link",
+   "label": "Comodity",
+   "options": "Comodity"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-23 00:18:15.478028",
+ "modified": "2026-04-24 00:43:00.881695",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Ticker",

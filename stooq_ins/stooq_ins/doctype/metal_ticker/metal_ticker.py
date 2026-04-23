@@ -14,6 +14,7 @@ class MetalTicker(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		comodity: DF.Link | None
 		metal_name: DF.Data
 		ticker_symbol: DF.Data | None
 		unit_of_measure: DF.Link | None
