@@ -249,7 +249,7 @@ require_type_annotated_api_methods = True
 # }
 scheduler_events = {
     "cron": {
-        "*/30 * * * *": [
+        "0 */3 * * *": [
             "stooq_ins.api.sync_metal_prices"
         ]
     }

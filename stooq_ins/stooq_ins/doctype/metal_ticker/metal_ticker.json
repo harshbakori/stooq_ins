@@ -10,7 +10,8 @@
   "metal_name",
   "ticker_symbol",
   "unit_of_measure",
-  "comodity"
+  "comodity",
+  "enabled"
  ],
  "fields": [
   {
@@ -42,12 +43,18 @@
    "fieldtype": "Link",
    "label": "Comodity",
    "options": "Comodity"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "enabled"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-24 00:43:00.881695",
+ "modified": "2026-04-27 23:56:29.954984",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Ticker",

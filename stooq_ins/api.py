@@ -10,7 +10,7 @@ logger = frappe.logger("metal_sync")
 def sync_metal_prices():
     """Fetch prices for all tickers defined in the 'Metal Ticker' DocType"""
     
-    active_metals = frappe.get_all("Metal Ticker", fields=["name", "ticker_symbol"])
+    active_metals = frappe.get_all("Metal Ticker", fields=["name", "ticker_symbol"],filters={"enabled": 1})
     
     if not active_metals:
         msg = "No tickers found in Metal Ticker list. Please add records to 'Metal Ticker' first."

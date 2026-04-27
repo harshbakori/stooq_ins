@@ -15,6 +15,7 @@ class MetalTicker(Document):
 		from frappe.types import DF
 
 		comodity: DF.Link | None
+		enabled: DF.Check
 		metal_name: DF.Data
 		ticker_symbol: DF.Data | None
 		unit_of_measure: DF.Link | None
