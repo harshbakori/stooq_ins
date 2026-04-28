@@ -51,7 +51,7 @@
    "fetch_from": "metal_ticker.unit_of_measure",
    "fieldname": "unit_of_mesure",
    "fieldtype": "Data",
-   "label": "Unit Of Mesure"
+   "label": "Unit Of Measure"
   },
   {
    "fetch_from": "metal_ticker.comodity",
@@ -63,7 +63,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-28 23:33:01.818804",
+ "modified": "2026-04-28 23:47:56.181416",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Price",
