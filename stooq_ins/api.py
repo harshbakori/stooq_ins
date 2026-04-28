@@ -59,7 +59,6 @@ def sync_metal_prices():
                     "price_date": p_date,
                     "close_price": close_val,
                     "volume": int(row['Volume']) if pd.notnull(row['Volume']) else 0,
-                    "created_at": frappe.utils.now(),
                 })
                 new_price.insert(ignore_permissions=True)
                 frappe.db.commit(ignore_permissions=True)

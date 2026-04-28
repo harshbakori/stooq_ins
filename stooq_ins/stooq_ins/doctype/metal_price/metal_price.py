@@ -16,7 +16,6 @@ class MetalPrice(Document):
 
 		close_price: DF.Currency
 		comodity: DF.Data | None
-		created_at: DF.Datetime | None
 		metal_ticker: DF.Link | None
 		name: DF.Int | None
 		price_date: DF.Date | None

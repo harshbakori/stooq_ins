@@ -13,8 +13,7 @@
   "volume",
   "ticker_name",
   "unit_of_mesure",
-  "comodity",
-  "created_at"
+  "comodity"
  ],
  "fields": [
   {
@@ -59,17 +58,12 @@
    "fieldname": "comodity",
    "fieldtype": "Data",
    "label": "Comodity"
-  },
-  {
-   "fieldname": "created_at",
-   "fieldtype": "Datetime",
-   "label": "Created At"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-28 23:56:10.610852",
+ "modified": "2026-04-29 00:02:20.000705",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Price",
