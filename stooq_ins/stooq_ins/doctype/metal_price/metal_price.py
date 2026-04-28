@@ -15,9 +15,12 @@ class MetalPrice(Document):
 		from frappe.types import DF
 
 		close_price: DF.Currency
+		comodity: DF.Data | None
 		metal_ticker: DF.Link | None
 		name: DF.Int | None
 		price_date: DF.Date | None
+		ticker_name: DF.Data | None
+		unit_of_mesure: DF.Data | None
 		volume: DF.Float
 	# end: auto-generated types
 

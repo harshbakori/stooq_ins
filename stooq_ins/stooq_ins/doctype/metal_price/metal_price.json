@@ -10,7 +10,10 @@
   "metal_ticker",
   "price_date",
   "close_price",
-  "volume"
+  "volume",
+  "ticker_name",
+  "unit_of_mesure",
+  "comodity"
  ],
  "fields": [
   {
@@ -20,29 +23,47 @@
   {
    "fieldname": "metal_ticker",
    "fieldtype": "Link",
-   "label": "metal_ticker",
+   "label": "Metal Ticker",
    "options": "Metal Ticker"
   },
   {
    "fieldname": "price_date",
    "fieldtype": "Date",
-   "label": "price_date"
+   "label": "Price Date"
   },
   {
    "fieldname": "close_price",
    "fieldtype": "Currency",
-   "label": "close_price"
+   "label": "Close Price"
   },
   {
    "fieldname": "volume",
    "fieldtype": "Float",
-   "label": "volume"
+   "label": "Volume"
+  },
+  {
+   "fetch_from": "metal_ticker.metal_name",
+   "fieldname": "ticker_name",
+   "fieldtype": "Data",
+   "label": "Metal Name"
+  },
+  {
+   "fetch_from": "metal_ticker.unit_of_measure",
+   "fieldname": "unit_of_mesure",
+   "fieldtype": "Data",
+   "label": "Unit Of Mesure"
+  },
+  {
+   "fetch_from": "metal_ticker.comodity",
+   "fieldname": "comodity",
+   "fieldtype": "Data",
+   "label": "Comodity"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-23 00:13:34.978057",
+ "modified": "2026-04-28 23:33:01.818804",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Price",

@@ -22,20 +22,20 @@
    "fieldname": "metal_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "metal_name",
+   "label": "Metal Name",
    "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "ticker_symbol",
    "fieldtype": "Data",
-   "label": "ticker_symbol",
+   "label": "Ticker Symbol",
    "unique": 1
   },
   {
    "fieldname": "unit_of_measure",
    "fieldtype": "Link",
-   "label": "unit_of_measure",
+   "label": "Unit Of Measure",
    "options": "UOM"
   },
   {
@@ -48,13 +48,13 @@
    "default": "0",
    "fieldname": "enabled",
    "fieldtype": "Check",
-   "label": "enabled"
+   "label": "Enabled"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-27 23:56:29.954984",
+ "modified": "2026-04-28 23:33:47.428073",
  "modified_by": "Administrator",
  "module": "Stooq Ins",
  "name": "Metal Ticker",
