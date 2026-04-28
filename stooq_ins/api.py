@@ -58,7 +58,7 @@ def sync_metal_prices():
                     "metal_ticker": metal.name, # Link field to Metal Ticker
                     "price_date": p_date,
                     "close_price": close_val,
-                    "volume": int(row['Volume']) if pd.notnull(row['Volume']) else 0,
+                    "volume": int(row['Volume']) if pd.notnull(row['Volume']) else 0
                 })
                 new_price.insert(ignore_permissions=True)
                 frappe.db.commit(ignore_permissions=True)
